@@ -5,6 +5,7 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
+import java.util.HashSet;
 
 /**
  * Created by kineret on 1/10/16.
@@ -18,9 +19,14 @@ public class editPic {
         //Download and save image
         BufferedImage image = downloadImage(imageToDownload);
 
+
         //Resize image
-        BufferedImage newSizeImage = resizeImage(image, 200, 200);
-        saveImage(image, destination);
+        BufferedImage newSizeImage = resizeImage(image, width, height);
+
+        //Convert into gray-scale image
+        BufferedImage grayScaleImage = convertToGrayScaleImage(newSizeImage);
+
+        saveImage(grayScaleImage, destination);
 
     }
 
@@ -45,9 +51,9 @@ public class editPic {
         //Save the file
         try {
             // retrieve image
-            BufferedImage bi = image;
+           // BufferedImage bi = image;
             File outputFile = new File(destination);
-            ImageIO.write(bi, imageFormat, outputFile);
+            ImageIO.write(image, imageFormat, outputFile);
            // LOGGER.debug("Image saved");
 
         } catch (IOException e) {
@@ -55,15 +61,34 @@ public class editPic {
         }
     }
 
-    private BufferedImage resizeImage(BufferedImage image, int scaledWidth, int scaledHeight) {
-        BufferedImage outputImage = image;
+   private BufferedImage resizeImage(BufferedImage image, int scaledWidth, int scaledHeight) {
+       int type = image.getType() == 0? BufferedImage.TYPE_INT_ARGB : image.getType();
+       BufferedImage resizedImage = new BufferedImage(scaledWidth, scaledHeight, type);
 
         // scales the input image to the output image
-        Graphics2D g2d = outputImage.createGraphics();
+        Graphics2D g2d = resizedImage.createGraphics();
         g2d.drawImage(image, 0, 0, scaledWidth, scaledHeight, null);
         g2d.dispose();
-        return outputImage;
+        return resizedImage;
     }
+
+    private BufferedImage convertToGrayScaleImage(BufferedImage image) {
+            int width = image.getWidth();
+            int height = image.getHeight();
+            for(int i=0; i<height; i++){
+                for(int j=0; j<width; j++){
+                    Color c = new Color(image.getRGB(j, i));
+                    int red = (int)(c.getRed() * 0.21);
+                    int green = (int)(c.getGreen() * 0.72);
+                    int blue = (int)(c.getBlue() *0.07);
+                    int sum = red + green + blue;
+                    Color newColor = new Color(sum,sum,sum);
+                    image.setRGB(j,i,newColor.getRGB());
+                }
+            }
+        return  image;
+    }
+
 
 
 

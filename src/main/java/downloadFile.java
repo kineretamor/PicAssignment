@@ -39,7 +39,7 @@ public class downloadFile {
             //Read the file
             //URL url = new URL(imageUrl.toString());
             image = ImageIO.read(imageToDownload);
-            LOGGER.debug("Image downloaded");
+        //    LOGGER.debug("Image downloaded");
 
         } catch (IOException e) {
         }
@@ -54,7 +54,7 @@ public class downloadFile {
             BufferedImage bi = image;
             File outputFile = new File(destination);
             ImageIO.write(bi, "png", outputFile);
-            LOGGER.debug("Image saved");
+           // LOGGER.debug("Image saved");
 
         } catch (IOException e) {
 
