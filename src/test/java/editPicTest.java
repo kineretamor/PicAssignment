@@ -16,11 +16,6 @@ public class editPicTest {
         String destination = "/Users/kineret/Desktop/destination/t.png";
         downloadFile df = new downloadFile(url, destination);
 
-        int i = 5;
-        int d = 4;
-        assertEquals((i + d), 9);
-        assertTrue(true);
-
     }*/
 
 
@@ -31,10 +26,7 @@ public class editPicTest {
         String destination = "/Users/kineret/Desktop/destination/new.png";
 
         editPic editP = new editPic(url, destination, 200, 200);
-        int i = 5;
-        int d = 4;
-        assertEquals((i + d), 9);
-        assertTrue(true);
+
 
     }
 }
