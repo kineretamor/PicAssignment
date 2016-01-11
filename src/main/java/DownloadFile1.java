@@ -1,22 +1,20 @@
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
-import java.io.*;
+import java.io.File;
+import java.io.IOException;
 import java.net.URL;
 
-import java.awt.*;
-
 /**
- * Created by kineret on 1/10/16.
+ * Created by kineret on 1/11/16.
  */
-public class downloadFile {
-
-    private static final Logger LOGGER = LoggerFactory.getLogger(downloadFile.class);
+public class DownloadFile1 {
 
 
-    private BufferedImage downloadImage(URL imageToDownload) {
+    public DownloadFile1() {
+    }
+
+
+    public BufferedImage downloadImage(URL imageToDownload) {
         //Download image
         BufferedImage image = null;
         try {
@@ -31,7 +29,7 @@ public class downloadFile {
         return image;
     }
 
-    private void saveImage(BufferedImage image, String imageFormat, String destination) {
+    public void saveImage(BufferedImage image, String imageFormat, String destination) {
 
         //Save the file
         try {
@@ -46,4 +44,3 @@ public class downloadFile {
     }
 
 }
-

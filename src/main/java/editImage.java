@@ -1,5 +1,3 @@
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -9,15 +7,16 @@ import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.HashSet;
+import org.apache.log4j.*;
 
 /**
  * Created by kineret on 1/10/16.
  */
-public class editPic {
-    private static final Logger LOGGER = LoggerFactory.getLogger(downloadFile.class);
+public class editImage {
+    protected static org.apache.log4j.Logger _logger = org.apache.log4j.Logger.getRootLogger();
 
 
-    public editPic(final URL imageToDownload, final String destination, int width, int height) throws IOException {
+    public editImage(final URL imageToDownload, final String destination, int width, int height) throws IOException {
 
         String imageFormat = imageToDownload.toString().substring(imageToDownload.toString().lastIndexOf(".") + 1);
         //Download image from web
@@ -41,9 +40,11 @@ public class editPic {
         try {
             //Read the file
             image = ImageIO.read(imageToDownload);
-            LOGGER.debug("Image downloaded");
+           // LOGGER.debug("Image downloaded");
 
         } catch (IOException e) {
+            e.printStackTrace(); //Useless
+
         }
         return image;
     }
@@ -55,7 +56,7 @@ public class editPic {
             // retrieve image
             File outputFile = new File(destination);
             ImageIO.write(image, imageFormat, outputFile);
-            LOGGER.debug("Image saved");
+           // LOGGER.debug("Image saved");
 
         } catch (IOException e) {
 

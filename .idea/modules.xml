@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/DB/DB.iml" filepath="$PROJECT_DIR$/DB/DB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DBM/DBM.iml" filepath="$PROJECT_DIR$/DBM/DBM.iml" />
       <module fileurl="file://$PROJECT_DIR$/PicAssignment.iml" filepath="$PROJECT_DIR$/PicAssignment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/edit/edit.iml" filepath="$PROJECT_DIR$/edit/edit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imageAssignment/imageAssignment.iml" filepath="$PROJECT_DIR$/imageAssignment/imageAssignment.iml" />
       <module fileurl="file://$PROJECT_DIR$/integration-testing/integration-testing.iml" filepath="$PROJECT_DIR$/integration-testing/integration-testing.iml" />
     </modules>
   </component>

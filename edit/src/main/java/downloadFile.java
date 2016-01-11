@@ -3,20 +3,16 @@ import org.slf4j.LoggerFactory;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
-import java.io.*;
+import java.io.File;
+import java.io.IOException;
 import java.net.URL;
-
-import java.awt.*;
 
 /**
  * Created by kineret on 1/10/16.
  */
-public class downloadFile {
+public class DownloadFile {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(downloadFile.class);
-
-
-    private BufferedImage downloadImage(URL imageToDownload) {
+    public BufferedImage downloadImage(URL imageToDownload) {
         //Download image
         BufferedImage image = null;
         try {
@@ -31,7 +27,7 @@ public class downloadFile {
         return image;
     }
 
-    private void saveImage(BufferedImage image, String imageFormat, String destination) {
+    public void saveImage(BufferedImage image, String imageFormat, String destination) {
 
         //Save the file
         try {
