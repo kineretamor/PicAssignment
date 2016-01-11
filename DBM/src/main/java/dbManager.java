@@ -1,5 +1,3 @@
-import org.apache.log4j.Logger;
-
 import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.sql.*;
@@ -9,7 +7,7 @@ import java.util.Properties;
 /**
  * Created by kineret on 1/11/16.
  */
-public class dbManager {
+public class DBManager {
 
     private static final String DB_SCHEME_NAME = "db.scheme.name";
 
@@ -17,15 +15,15 @@ public class dbManager {
 
     private static final String DB_USER_NAME = "db.user.name";
 
-    //private Logger log = Logger.getLogger(dbManager.class);
+    //private Logger log = Logger.getLogger(DBManager.class);
 
     private Connection connection = null;
 
-    public dbManager() {
+    public DBManager() {
         Properties properties = new Properties();
 
         try {
-            properties.load(dbManager.class.getClassLoader().getResourceAsStream("cortica.properties"));
+            properties.load(DBManager.class.getClassLoader().getResourceAsStream("cortica.properties"));
             String userName = properties.getProperty(DB_USER_NAME);
             String userPwd = properties.getProperty(DB_USER_PASSWORD);
             String dbName = properties.getProperty(DB_SCHEME_NAME);

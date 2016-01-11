@@ -52,5 +52,7 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:4.1.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.glassfish.hk2.external:javax.inject:2.4.0-b09" level="project" />
     <orderEntry type="module" module-name="edit" />
+    <orderEntry type="module" module-name="DBM" />
+    <orderEntry type="module" module-name="DBM" />
   </component>
 </module>

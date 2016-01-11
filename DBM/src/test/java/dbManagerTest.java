@@ -16,7 +16,7 @@ public class dbManagerTest {
 
         _logger.info("Starting testInsertIntoTable");
 
-        dbManager dbm = new dbManager();
+        DBManager dbm = new DBManager();
         dbm.insertIntoTable();
 
         _logger.info("Ending testInsertIntoTable");

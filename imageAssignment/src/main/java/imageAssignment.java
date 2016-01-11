@@ -6,11 +6,14 @@ import java.net.URL;
  * Created by kineret on 1/11/16.
  */
 public class ImageAssignment {
+  private static final int WIDTH_NEW_IMAGE = 200;
+  private static final int HEIGHT_NEW_IMAGE = 200;
 
   public void main() throws MalformedURLException {
 
     DownloadFile downloadFile = new DownloadFile();
     EditImage editImage = new EditImage();
+  //  DBManager2 dbManager = new DBManager2();
 
 
     //URL to download image
@@ -20,9 +23,8 @@ public class ImageAssignment {
     //Download image
     BufferedImage orgImg = downloadFile.downloadImage(url);
 
-    //Change size to 200X200 pixels
-    //ToDo: change pixels to global
-    BufferedImage editedImg = editImage.resizeImage(orgImg, 200, 200);
+    //Change image size
+    BufferedImage editedImg = editImage.resizeImage(orgImg, WIDTH_NEW_IMAGE, HEIGHT_NEW_IMAGE);
 
     //Change colour to gray-scale
     editedImg = editImage.convertToGrayScaleImage(editedImg);
@@ -33,6 +35,7 @@ public class ImageAssignment {
     downloadFile.saveImage(editedImg, imageFormat, destination);
 
     //Save record on DB
+   // dbManager.insertRecord(url.toString(), destination);
 
 
   }
