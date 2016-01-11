@@ -44,13 +44,23 @@ public class DBManager2 {
 
            /* String userName = properties.getProperty( DB_USER_NAME);
             String userPwd = properties.getProperty( DB_USER_PASSWORD);
-            String dbName  = properties.getProperty( DB_SCHEME_NAME);*/
+            String dbName  = properties.getProperty( DB_SCHEME_NAME);
             String userName =  DB_USER_NAME;
             String userPwd =  DB_USER_PASSWORD;
-            String dbName  = DB_SCHEME_NAME;
-            Class.forName("com.mysql.jdbc.Driver");
+            String dbName  = DB_SCHEME_NAME;*/
+            String DBAddress= "jdbc:hsqldb.hsql://localhost/";
+            String userName = "SA";
+            String password = null;
+            String driver = "org.hsqldb.jdbc.JDBCDriver";
+            Class.forName("org.hsqldb.jdbc.JDBCDriver").newInstance();;
+
+
             // Setup the connection with the DB
-            connection = DriverManager.getConnection( MessageFormat.format( "jdbc:mysql://localhost/{0}?user={1}&password={2}", dbName, userName, userPwd));
+            connection = DriverManager.getConnection( MessageFormat.format( "jdbc:mysql://localhost/{0}?user={1}&password={2}", "testdb", userName, password));
+
+
+
+
         } catch (Exception e) {
          //   log.error( e);
         }

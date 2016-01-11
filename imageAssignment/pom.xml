@@ -13,11 +13,28 @@
 
 
     <dependencies>
-    <dependency>
-        <groupId>com.applango</groupId>
-        <artifactId>edit</artifactId>
-        <version>${project.version}</version>
-    </dependency>
+
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.6</version>
+        </dependency>
+        <dependency>
+            <groupId>picAssignment</groupId>
+            <artifactId>edit</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>picAssignment</groupId>
+            <artifactId>DBM</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>picAssignment</groupId>
+            <artifactId>DB</artifactId>
+            <version>${project.version}</version>
+        </dependency>
     </dependencies>
 
 </project>

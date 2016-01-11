@@ -1,6 +1,7 @@
 import java.awt.image.BufferedImage;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.sql.SQLException;
 
 /**
  * Created by kineret on 1/11/16.
@@ -13,7 +14,8 @@ public class ImageAssignment {
 
     DownloadFile downloadFile = new DownloadFile();
     EditImage editImage = new EditImage();
-  //  DBManager2 dbManager = new DBManager2();
+
+   // DBManager2 dbManager = new DBManager2();
 
 
     //URL to download image
@@ -37,6 +39,26 @@ public class ImageAssignment {
     //Save record on DB
    // dbManager.insertRecord(url.toString(), destination);
 
+   // String DBAddress= "jdbc:hsqldb.hsql://localhost/testdb";
+    String DBAddress= "jdbc:hsqldb.hsql://localhost/";
+    String userName = "SA";
+    String password = null;
+    String driver = "org.hsqldb.jdbc.JDBCDriver";
+    //String driver = "com.mysql.jdbc.Driver";
+
+    //  ConfigDB configDB = new ConfigDB(DBAddress, userName, password, driver);
+ //   configDB.createStatement();
+
+
+
+    DBHandler dbHandler = new DBHandler(DBAddress, userName, password, driver);
+    try {
+      dbHandler.createTable();
+    } catch (SQLException e) {
+      e.printStackTrace();
+    }
+    int f;
+    f=3;
 
   }
 

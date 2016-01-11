@@ -24,7 +24,6 @@
     </build>
 
     <modules>
-        <module>integration-testing</module>
         <module>DB</module>
         <module>DBM</module>
         <module>edit</module>
