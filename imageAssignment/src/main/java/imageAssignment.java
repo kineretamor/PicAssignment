@@ -1,3 +1,4 @@
+import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Logger;
 
 import java.awt.image.BufferedImage;
@@ -20,9 +21,17 @@ public class ImageAssignment {
     private static final int HEIGHT_NEW_IMAGE = 200;
     protected static Logger _logger = Logger.getRootLogger();
 
-
+    /**
+     * Main program , download images from URLs,
+     * resize them, change them to gray-scale,
+     * save the new images on disk
+     * save record per image on db
+     * @throws IOException
+     * @throws SQLException
+     */
     public void main() throws IOException, SQLException {
         _logger.debug("Starting main program");
+        BasicConfigurator.configure();
 
         DownloadFile downloadFile = new DownloadFile();
         EditImage editImage = new EditImage();

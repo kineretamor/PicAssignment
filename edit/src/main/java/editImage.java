@@ -13,6 +13,14 @@ import java.net.URL;
 public class EditImage {
     protected static Logger _logger = Logger.getRootLogger();
 
+    /**
+     * Resize the image according to the wanted scale
+     *
+     * @param image        the image for resize
+     * @param scaledWidth  the wanted width scale
+     * @param scaledHeight the wanted height scale
+     * @return the new image after resize
+     */
     public BufferedImage resizeImage(BufferedImage image, int scaledWidth, int scaledHeight) {
         _logger.debug("Starting resizeImage, width:" + scaledHeight + ", height: " + scaledHeight);
 
@@ -28,6 +36,12 @@ public class EditImage {
         return resizedImage;
     }
 
+    /**
+     * Convert image to gray-scale
+     *
+     * @param image the image for convert
+     * @return the new image after convert to gray-scale
+     */
     public BufferedImage convertToGrayScaleImage(BufferedImage image) {
         _logger.debug("Starting convertToGrayScaleImage");
         int width = image.getWidth();

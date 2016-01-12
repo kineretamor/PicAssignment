@@ -17,7 +17,11 @@ public class MD5 {
 
     protected static Logger _logger = Logger.getRootLogger();
 
-
+    /**
+     * @param destination the location of the image
+     * @return MD5 string that generated
+     * @throws IOException
+     */
     public String getMD5(String destination) throws IOException {
         _logger.debug("Starting getMD5, create MD5 to file in : " + destination);
 
@@ -32,7 +36,7 @@ public class MD5 {
         fis.close();
         _logger.debug("Ending getMD5");
 
-        return  md5;
+        return md5;
     }
 
 }

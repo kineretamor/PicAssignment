@@ -12,6 +12,12 @@ import java.net.URL;
 public class DownloadFile {
     protected static Logger _logger = Logger.getRootLogger();
 
+    /**
+     * Download an image from URL
+     *
+     * @param imageToDownload an absolute URL giving the base location of the image
+     * @return BufferedImage downloaded image
+     */
     public BufferedImage downloadImage(URL imageToDownload) {
         _logger.debug("Starting downloadImage from URL: " + imageToDownload);
 
@@ -30,12 +36,18 @@ public class DownloadFile {
         return image;
     }
 
+    /**
+     * Save image on disk
+     *
+     * @param image       BufferedImage, the image for saving
+     * @param imageFormat represent the image file format
+     * @param destination represent the disk location for saving image
+     */
     public void saveImage(BufferedImage image, String imageFormat, String destination) {
         _logger.debug("Starting saveImage on disk: " + destination);
 
         //Save the file
         try {
-            // retrieve image
             File outputFile = new File(destination);
             ImageIO.write(image, imageFormat, outputFile);
             _logger.debug("Image saved");
