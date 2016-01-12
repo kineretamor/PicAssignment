@@ -12,6 +12,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.6" level="project" />
+    <orderEntry type="library" name="Maven: hsqldb:hsqldb:1.8.0.7" level="project" />
     <orderEntry type="module" module-name="edit" />
     <orderEntry type="module" module-name="DBM" />
     <orderEntry type="module" module-name="DB" />
@@ -54,5 +55,6 @@
     <orderEntry type="library" name="Maven: commons-logging:commons-logging:1.2" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:4.1.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.glassfish.hk2.external:javax.inject:2.4.0-b09" level="project" />
+    <orderEntry type="library" name="Maven: org.geotools:gt2-plugin:2.3.3" level="project" />
   </component>
 </module>

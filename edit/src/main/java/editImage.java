@@ -13,53 +13,7 @@ import java.net.URL;
 public class EditImage {
     protected static Logger _logger = Logger.getRootLogger();
 
-   /*
-    public EditImage() throws IOException {
 
-     String imageFormat = imageToDownload.toString().substring(imageToDownload.toString().lastIndexOf(".") + 1);
-        //Download image from web
-        BufferedImage imageOrg = downloadImage(imageToDownload);
-
-        //Resize image
-        BufferedImage editImage = resizeImage(imageOrg, width, height);
-
-        //Convert into gray-scale image
-        editImage = convertToGrayScaleImage(editImage);
-
-        //Save image on computer
-        saveImage(editImage, imageFormat, destination);
-
-    }
-*/
-
-    public BufferedImage downloadImage(URL imageToDownload) {
-        //Download image
-        BufferedImage image = null;
-        try {
-            //Read the file
-            image = ImageIO.read(imageToDownload);
-           // LOGGER.debug("Image downloaded");
-
-        } catch (IOException e) {
-            e.printStackTrace(); //Useless
-
-        }
-        return image;
-    }
-
-    public void saveImage(BufferedImage image, String imageFormat, String destination) {
-
-        //Save the file
-        try {
-            // retrieve image
-            File outputFile = new File(destination);
-            ImageIO.write(image, imageFormat, outputFile);
-           // LOGGER.debug("Image saved");
-
-        } catch (IOException e) {
-
-        }
-    }
 
     public BufferedImage resizeImage(BufferedImage image, int scaledWidth, int scaledHeight) {
         int type = image.getType() == 0 ? BufferedImage.TYPE_INT_ARGB : image.getType();
