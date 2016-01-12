@@ -13,9 +13,9 @@ import java.net.URL;
 public class EditImage {
     protected static Logger _logger = Logger.getRootLogger();
 
-
-
     public BufferedImage resizeImage(BufferedImage image, int scaledWidth, int scaledHeight) {
+        _logger.debug("Starting resizeImage, width:" + scaledHeight + ", height: " + scaledHeight);
+
         int type = image.getType() == 0 ? BufferedImage.TYPE_INT_ARGB : image.getType();
         BufferedImage resizedImage = new BufferedImage(scaledWidth, scaledHeight, type);
 
@@ -23,10 +23,13 @@ public class EditImage {
         Graphics2D g2d = resizedImage.createGraphics();
         g2d.drawImage(image, 0, 0, scaledWidth, scaledHeight, null);
         g2d.dispose();
+
+        _logger.debug("Ending resizeImage");
         return resizedImage;
     }
 
     public BufferedImage convertToGrayScaleImage(BufferedImage image) {
+        _logger.debug("Starting convertToGrayScaleImage");
         int width = image.getWidth();
         int height = image.getHeight();
         for (int i = 0; i < height; i++) {
@@ -40,6 +43,7 @@ public class EditImage {
                 image.setRGB(j, i, newColor.getRGB());
             }
         }
+        _logger.debug("Ending convertToGrayScaleImage");
         return image;
     }
 

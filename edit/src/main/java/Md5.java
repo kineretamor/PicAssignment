@@ -19,15 +19,18 @@ public class MD5 {
 
 
     public String getMD5(String destination) throws IOException {
+        _logger.debug("Starting getMD5, create MD5 to file in : " + destination);
 
         FileInputStream fis = null;
         try {
             fis = new FileInputStream(destination);
         } catch (FileNotFoundException e) {
+            _logger.error("Failed to create MD5: " + e.getMessage());
             e.printStackTrace();
         }
         String md5 = org.apache.commons.codec.digest.DigestUtils.md5Hex(String.valueOf(fis));
         fis.close();
+        _logger.debug("Ending getMD5");
 
         return  md5;
     }

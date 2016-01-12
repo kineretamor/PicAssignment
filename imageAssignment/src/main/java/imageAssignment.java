@@ -1,3 +1,5 @@
+import org.apache.log4j.Logger;
+
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.InputStream;
@@ -16,8 +18,11 @@ import java.sql.SQLException;
 public class ImageAssignment {
     private static final int WIDTH_NEW_IMAGE = 200;
     private static final int HEIGHT_NEW_IMAGE = 200;
+    protected static Logger _logger = Logger.getRootLogger();
+
 
     public void main() throws IOException, SQLException {
+        _logger.debug("Starting main program");
 
         DownloadFile downloadFile = new DownloadFile();
         EditImage editImage = new EditImage();
@@ -74,6 +79,10 @@ public class ImageAssignment {
     }*/
         int f;
         f = 3;
+
+
+
+        _logger.debug("Ending main program");
 
     }
 

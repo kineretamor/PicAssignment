@@ -16,23 +16,14 @@ import org.apache.log4j.Logger;
 public class DBManager2 {
 
   /*      private static final String DB_SCHEME_NAME = "db.scheme.name";
-
     private static final String DB_USER_PASSWORD = "db.user.password";
-
     private static final String DB_USER_NAME = "db.user.name";*/
 
-
-
-    private static final String DB_SCHEME_NAME = "name";
-
-    private static final String DB_USER_PASSWORD = "psw";
-
-    private static final String DB_USER_NAME = "root";
 
     DBHandler dbHandler;
 
 
-  //  private Logger log = Logger.getLogger( DBManager.class);
+    protected static Logger _logger = Logger.getRootLogger();
 
     private Connection connection = null;
 
@@ -43,25 +34,30 @@ public class DBManager2 {
         String password = null;
         String driver = "org.hsqldb.jdbc.JDBCDriver";
         //String driver = "com.mysql.jdbc.Driver";
-        DBHandler dbHandler = new DBHandler(DBAddress, userName, password, driver);
+         dbHandler = new DBHandler(DBAddress, userName, password, driver);
     }
 
 
     public void createTable() throws SQLException {
+        _logger.debug("Starting createTable, call db");
 
        dbHandler.createTable();
 
+        _logger.debug("Ending createTable");
     }
 
 
 
 
     public void insertRecord( final String downloadedPath, final String imageURL, final String md5) {
-
+        _logger.debug("Starting insertRecord, from URL :" + imageURL + "to: " + downloadedPath);
 
         try {
             dbHandler.insertIntoTable(downloadedPath, imageURL, md5);
+            _logger.debug("record inserted");
+
         } catch (SQLException e) {
+            _logger.error("Failed to insertRecord");
             e.printStackTrace();
         }
 
