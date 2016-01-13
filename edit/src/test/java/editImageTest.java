@@ -30,7 +30,7 @@ public class editImageTest {
         assertEquals(editedImg.getRaster().getHeight(), 200);
 
         //Change image size 243X189
-         editedImg = editImage.resizeImage(orgImg, 243, 189);
+        editedImg = editImage.resizeImage(orgImg, 243, 189);
 
         assertNotNull(editedImg);
         assertEquals(editedImg.getRaster().getWidth(), 243);

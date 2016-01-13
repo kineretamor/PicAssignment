@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3aa9ee17-c495-4cd2-9f00-d82ce001227a" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DBM/target/classes/DBManager2.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/DBM/src/main/java/DBManager2.java" afterPath="$PROJECT_DIR$/DBM/src/main/java/DBManager.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/edit/src/main/java/editImage.java" afterPath="$PROJECT_DIR$/edit/src/main/java/EditImage.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/imageAssignment/src/main/java/imageAssignment.java" afterPath="$PROJECT_DIR$/imageAssignment/src/main/java/ImageAssignment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imageAssignment/target/classes/ImageAssignment.class" afterPath="$PROJECT_DIR$/imageAssignment/target/classes/ImageAssignment.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imageAssignment/target/test-classes/imageAssignmentTest.class" afterPath="$PROJECT_DIR$/imageAssignment/target/test-classes/imageAssignmentTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DBM/src/main/resources/dbmSettings.properties" afterPath="$PROJECT_DIR$/DBM/src/main/resources/dbmSettings.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DBM/target/classes/dbmSettings.properties" afterPath="$PROJECT_DIR$/DBM/target/classes/dbmSettings.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/edit/src/test/java/downloadFileTest.java" afterPath="$PROJECT_DIR$/edit/src/test/java/downloadFileTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/edit/src/test/java/editImageTest.java" afterPath="$PROJECT_DIR$/edit/src/test/java/editImageTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imageAssignment/src/test/java/imageAssignmentTest.java" afterPath="$PROJECT_DIR$/imageAssignment/src/test/java/imageAssignmentTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="picAssignment.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,74 +56,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DBManager2.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DBM/src/main/java/DBManager2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="imageAssignmentTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/imageAssignment/src/test/java/imageAssignmentTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.17631578">
-              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.078947365">
+              <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="docComment;class#imageAssignmentTest#0" expanded="false" />
+                <element signature="method#testImageAssignment#0;class#imageAssignmentTest#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImageAssignment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/imageAssignment/src/main/java/ImageAssignment.java">
+      <file leaf-file-name="dbTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DB/src/test/java/dbTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="93" column="7" selection-start-line="93" selection-start-column="7" selection-end-line="95" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileUtils.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/cassandra/cassandra-all/0.8.1/cassandra-all-0.8.1-sources.jar!/org/apache/cassandra/io/util/FileUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.2592592">
-              <caret line="208" column="23" selection-start-line="208" selection-start-column="23" selection-end-line="208" selection-end-column="23" />
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding>
-                <element signature="method#deleteWithConfirm#0;class#FileUtils#0" expanded="false" />
-                <element signature="method#deleteWithConfirm#1;class#FileUtils#0" expanded="false" />
-                <element signature="method#renameWithConfirm#0;class#FileUtils#0" expanded="false" />
-                <element signature="method#truncate#0;class#FileUtils#0" expanded="false" />
-                <element signature="method#closeQuietly#0;class#FileUtils#0" expanded="false" />
-                <element signature="method#close#0;class#FileUtils#0" expanded="false" />
-                <element signature="class#FileComparator#0;class#FileUtils#0" expanded="false" />
-                <element signature="method#createDirectory#0;class#FileUtils#0" expanded="false" />
-                <element signature="method#delete#0;class#FileUtils#0" expanded="false" />
-                <element signature="method#delete#1;class#FileUtils#0" expanded="false" />
-                <element signature="method#delete#2;class#FileUtils#0" expanded="false" />
-                <element signature="method#stringifyFileSize#0;class#FileUtils#0" expanded="false" />
-                <element signature="docComment;method#deleteRecursive#0;class#FileUtils#0" expanded="false" />
-                <element signature="method#deleteRecursive#0;class#FileUtils#0" expanded="false" />
-                <element signature="method#skipBytesFully#0;class#FileUtils#0" expanded="false" />
-                <element signature="method#skipBytesFully#1;class#FileUtils#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="editImageTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/edit/src/test/java/editImageTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="45" column="20" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="docComment;class#dbTest#0" expanded="false" />
+                <element signature="method#testDB#0;class#dbTest#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -122,8 +86,50 @@
         <entry file="file://$PROJECT_DIR$/edit/src/test/java/downloadFileTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="44" column="22" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding>
+                <element signature="docComment;class#downloadFileTest#0" expanded="false" />
+                <element signature="method#testDownloadFile#0;class#downloadFileTest#0" expanded="false" />
+                <element signature="method#testSaveImage#0;class#downloadFileTest#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImageAssignment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imageAssignment/src/main/java/ImageAssignment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+              <folding>
+                <element signature="docComment;class#ImageAssignment#0" expanded="false" />
+                <element signature="docComment;method#main#0;class#ImageAssignment#0" expanded="false" />
+                <element signature="method#main#0;class#ImageAssignment#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="URLList" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imageAssignment/src/main/resources/files/URLList">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="editImageTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/edit/src/test/java/editImageTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding>
+                <element signature="docComment;class#editImageTest#0" expanded="false" />
+                <element signature="method#testResizeImage#0;class#editImageTest#0" expanded="false" />
+                <element signature="method#testConvertToGrayScaleImage#0;class#editImageTest#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -132,21 +138,13 @@
         <entry file="file://$PROJECT_DIR$/edit/src/main/java/DownloadFile.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+              <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
               <folding>
                 <element signature="docComment;class#DownloadFile#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EditImage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/edit/src/main/java/EditImage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-              <folding>
-                <element signature="docComment;class#EditImage#0" expanded="false" />
+                <element signature="docComment;method#downloadImage#0;class#DownloadFile#0" expanded="false" />
+                <element signature="method#downloadImage#0;class#DownloadFile#0" expanded="false" />
+                <element signature="docComment;method#saveImage#0;class#DownloadFile#0" expanded="false" />
+                <element signature="method#saveImage#0;class#DownloadFile#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -156,8 +154,24 @@
         <entry file="file://$PROJECT_DIR$/DBM/src/main/resources/dbmSettings.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EditImage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/edit/src/main/java/EditImage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+              <folding>
+                <element signature="docComment;class#EditImage#0" expanded="false" />
+                <element signature="docComment;method#resizeImage#0;class#EditImage#0" expanded="false" />
+                <element signature="method#resizeImage#0;class#EditImage#0" expanded="false" />
+                <element signature="docComment;method#convertToGrayScaleImage#0;class#EditImage#0" expanded="false" />
+                <element signature="method#convertToGrayScaleImage#0;class#EditImage#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -166,8 +180,12 @@
         <entry file="file://$PROJECT_DIR$/edit/src/main/java/MD5.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="34" column="60" selection-start-line="34" selection-start-column="60" selection-end-line="34" selection-end-column="60" />
-              <folding />
+              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+              <folding>
+                <element signature="docComment;class#MD5#0" expanded="false" />
+                <element signature="docComment;method#getMD5#0;class#MD5#0" expanded="false" />
+                <element signature="method#getMD5#0;class#MD5#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -198,23 +216,24 @@
         <option value="$PROJECT_DIR$/DB/src/main/java/JDBCDriver.java" />
         <option value="$PROJECT_DIR$/DBM/src/test/java/dbManagerTest.java" />
         <option value="$PROJECT_DIR$/edit/src/main/java/Md5.java" />
-        <option value="$PROJECT_DIR$/edit/src/main/java/EditImage.java" />
         <option value="$PROJECT_DIR$/edit/src/main/java/MD5.java" />
         <option value="$PROJECT_DIR$/edit/src/main/java/DownloadFile.java" />
         <option value="$PROJECT_DIR$/imageAssignment/src/main/java/imageAssignment.java" />
         <option value="$PROJECT_DIR$/DB/pom.xml" />
         <option value="$PROJECT_DIR$/imageAssignment/pom.xml" />
-        <option value="$PROJECT_DIR$/edit/src/test/java/editImageTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/DB/src/main/java/ConfigDBUsageSample.java" />
         <option value="$PROJECT_DIR$/imageAssignment/src/main/resources/URLList" />
         <option value="$PROJECT_DIR$/imageAssignment/src/main/resources/files/URLList" />
         <option value="$PROJECT_DIR$/imageAssignment/src/main/resources/files/Destination" />
-        <option value="$PROJECT_DIR$/imageAssignment/src/main/java/ImageAssignment.java" />
-        <option value="$PROJECT_DIR$/DBM/src/main/resources/dbmSettings.properties" />
         <option value="$PROJECT_DIR$/DBM/src/main/java/DBManager2.java" />
         <option value="$PROJECT_DIR$/DB/src/test/java/dbTest.java" />
+        <option value="$PROJECT_DIR$/DBM/src/main/java/DBManager.java" />
+        <option value="$PROJECT_DIR$/DBM/src/main/resources/dbmSettings.properties" />
+        <option value="$PROJECT_DIR$/edit/src/main/java/EditImage.java" />
         <option value="$PROJECT_DIR$/edit/src/test/java/downloadFileTest.java" />
+        <option value="$PROJECT_DIR$/edit/src/test/java/editImageTest.java" />
+        <option value="$PROJECT_DIR$/imageAssignment/src/main/java/ImageAssignment.java" />
         <option value="$PROJECT_DIR$/imageAssignment/src/test/java/imageAssignmentTest.java" />
       </list>
     </option>
@@ -782,7 +801,7 @@
       <recent name="$PROJECT_DIR$/imageAssignment/src/main/resources/files" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.imageAssignmentTest.testImageAssignment">
+  <component name="RunManager" selected="JUnit.imageAssignmentTest">
     <configuration default="false" name="downloadFileTest.testSaveImage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="edit" />
@@ -804,15 +823,15 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="editImageTest.testResizeImage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="editImageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="edit" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="editImageTest" />
-      <option name="METHOD_NAME" value="testResizeImage" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -825,15 +844,15 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="editImageTest.testConvertToGrayScaleImage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="downloadFileTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="edit" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="editImageTest" />
-      <option name="METHOD_NAME" value="testConvertToGrayScaleImage" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="downloadFileTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -846,15 +865,15 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="imageAssignmentTest.testEditPic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="dbTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="imageAssignment" />
+      <module name="DB" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="imageAssignmentTest" />
-      <option name="METHOD_NAME" value="testEditPic" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="dbTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -867,15 +886,15 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="imageAssignmentTest.testImageAssignment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="imageAssignmentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="imageAssignment" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="imageAssignmentTest" />
-      <option name="METHOD_NAME" value="testImageAssignment" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -1161,18 +1180,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.downloadFileTest.testSaveImage" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.editImageTest.testResizeImage" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.editImageTest.testConvertToGrayScaleImage" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.imageAssignmentTest.testEditPic" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.imageAssignmentTest.testImageAssignment" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.editImageTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.downloadFileTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.dbTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.imageAssignmentTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.imageAssignmentTest.testImageAssignment" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.editImageTest.testConvertToGrayScaleImage" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.editImageTest.testResizeImage" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.downloadFileTest.testSaveImage" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.imageAssignmentTest.testEditPic" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.imageAssignmentTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.editImageTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.downloadFileTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.dbTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.downloadFileTest.testSaveImage" />
       </list>
     </recent_temporary>
   </component>
@@ -1188,12 +1207,12 @@
       <updated>1452542639442</updated>
       <workItem from="1452542641155" duration="46000" />
       <workItem from="1452542702017" duration="17914000" />
-      <workItem from="1452713104087" duration="11414000" />
+      <workItem from="1452713104087" duration="11964000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29374000" />
+    <option name="totallyTimeSpent" value="29924000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1223,7 +1242,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294893" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294893" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28756058" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28756058" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18659128" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3014827" sideWeight="0.49676898" order="2" side_tool="false" content_ui="tabs" />
@@ -1235,31 +1254,31 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15105008" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294893" sideWeight="0.503231" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32784185" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27786753" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294893" sideWeight="0.503231" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32784185" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294893" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18659128" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3014827" sideWeight="0.49676898" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294893" sideWeight="0.49676898" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294893" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294893" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294893" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294893" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4892916" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294893" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47281712" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294893" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294893" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.115508884" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28756058" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1300,24 +1319,6 @@
           <properties />
           <option name="timeStamp" value="87" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/imageAssignment/src/test/java/imageAssignmentTest.java</url>
-          <line>23</line>
-          <properties />
-          <option name="timeStamp" value="88" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/imageAssignment/src/test/java/imageAssignmentTest.java</url>
-          <line>25</line>
-          <properties />
-          <option name="timeStamp" value="89" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/imageAssignment/src/test/java/imageAssignmentTest.java</url>
-          <line>22</line>
-          <properties />
-          <option name="timeStamp" value="91" />
-        </line-breakpoint>
       </breakpoints>
       <option name="time" value="92" />
     </breakpoint-manager>
@@ -1333,12 +1334,14 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/DBM/src/main/java/DBManager2.java">
+    <entry file="file://$PROJECT_DIR$/DBM/src/main/java/DBManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="59" column="30" selection-start-line="59" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#DBManager#0;class#DBManager#0" expanded="false" />
+            <element signature="method#createTable#0;class#DBManager#0" expanded="false" />
+            <element signature="method#insertRecord#0;class#DBManager#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1347,7 +1350,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="5" selection-start-line="16" selection-start-column="2" selection-end-line="25" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="docComment;class#downloadFileTest#0" expanded="false" />
+            <element signature="method#testDownloadFile#0;class#downloadFileTest#0" expanded="false" />
+            <element signature="method#testSaveImage#0;class#downloadFileTest#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1356,7 +1363,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#editImageTest#0" expanded="false" />
+            <element signature="method#testResizeImage#0;class#editImageTest#0" expanded="false" />
+            <element signature="method#testConvertToGrayScaleImage#0;class#editImageTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1413,7 +1422,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#imageAssignmentTest#0" expanded="false" />
+            <element signature="method#testImageAssignment#0;class#imageAssignmentTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1422,7 +1432,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="docComment;class#ImageAssignment#0" expanded="false" />
+            <element signature="docComment;method#main#0;class#ImageAssignment#0" expanded="false" />
+            <element signature="method#main#0;class#ImageAssignment#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1516,24 +1530,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imageAssignment/src/main/resources/files/URLList">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15267175">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DBM/target/classes/DBManager2.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#1575#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/jobInt/cortica-assignment/Cortica/src/assingment/cortica/artem/barger/DBManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15267175">
@@ -1573,80 +1569,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DB/src/test/java/dbTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DBM/src/main/java/DBManager2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DBM/src/main/resources/dbmSettings.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edit/src/main/java/DownloadFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;class#DownloadFile#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edit/src/main/java/EditImage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;class#EditImage#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edit/src/main/java/MD5.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="60" selection-start-line="34" selection-start-column="60" selection-end-line="34" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edit/src/test/java/downloadFileTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="44" column="22" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edit/src/test/java/editImageTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="20" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/cassandra/cassandra-all/0.8.1/cassandra-all-0.8.1-sources.jar!/org/apache/cassandra/io/util/FileUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.2592592">
@@ -1672,20 +1594,128 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/DBM/src/main/java/DBManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+          <folding>
+            <element signature="method#DBManager#0;class#DBManager#0" expanded="false" />
+            <element signature="method#createTable#0;class#DBManager#0" expanded="false" />
+            <element signature="method#insertRecord#0;class#DBManager#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DBM/src/main/resources/dbmSettings.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edit/src/main/java/DownloadFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#DownloadFile#0" expanded="false" />
+            <element signature="docComment;method#downloadImage#0;class#DownloadFile#0" expanded="false" />
+            <element signature="method#downloadImage#0;class#DownloadFile#0" expanded="false" />
+            <element signature="docComment;method#saveImage#0;class#DownloadFile#0" expanded="false" />
+            <element signature="method#saveImage#0;class#DownloadFile#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edit/src/main/java/EditImage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#EditImage#0" expanded="false" />
+            <element signature="docComment;method#resizeImage#0;class#EditImage#0" expanded="false" />
+            <element signature="method#resizeImage#0;class#EditImage#0" expanded="false" />
+            <element signature="docComment;method#convertToGrayScaleImage#0;class#EditImage#0" expanded="false" />
+            <element signature="method#convertToGrayScaleImage#0;class#EditImage#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edit/src/main/java/MD5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#MD5#0" expanded="false" />
+            <element signature="docComment;method#getMD5#0;class#MD5#0" expanded="false" />
+            <element signature="method#getMD5#0;class#MD5#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/imageAssignment/src/main/java/ImageAssignment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="93" column="7" selection-start-line="93" selection-start-column="7" selection-end-line="95" selection-end-column="9" />
+          <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#ImageAssignment#0" expanded="false" />
+            <element signature="docComment;method#main#0;class#ImageAssignment#0" expanded="false" />
+            <element signature="method#main#0;class#ImageAssignment#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imageAssignment/src/main/resources/files/URLList">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DB/src/test/java/dbTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#dbTest#0" expanded="false" />
+            <element signature="method#testDB#0;class#dbTest#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edit/src/test/java/downloadFileTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#downloadFileTest#0" expanded="false" />
+            <element signature="method#testDownloadFile#0;class#downloadFileTest#0" expanded="false" />
+            <element signature="method#testSaveImage#0;class#downloadFileTest#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edit/src/test/java/editImageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#editImageTest#0" expanded="false" />
+            <element signature="method#testResizeImage#0;class#editImageTest#0" expanded="false" />
+            <element signature="method#testConvertToGrayScaleImage#0;class#editImageTest#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/imageAssignment/src/test/java/imageAssignmentTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17631578">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.078947365">
+          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#imageAssignmentTest#0" expanded="false" />
+            <element signature="method#testImageAssignment#0;class#imageAssignmentTest#0" expanded="false" />
           </folding>
         </state>
       </provider>

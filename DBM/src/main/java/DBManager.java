@@ -1,23 +1,19 @@
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
 import java.sql.*;
-import java.text.MessageFormat;
 import java.util.Properties;
 
 import org.apache.log4j.Logger;
 
-public class DBManager2 {
+public class DBManager {
 
     DBHandler dbHandler;
 
     protected static Logger _logger = Logger.getRootLogger();
 
-    public DBManager2() {
+    public DBManager() {
 
         Properties prop = new Properties();
         try {
-            prop.load(DBManager2.class.getClassLoader().getResourceAsStream("dbmSettings.properties"));
+            prop.load(DBManager.class.getClassLoader().getResourceAsStream("dbmSettings.properties"));
             String DBAddress = prop.getProperty("db.address");
             String userName = prop.getProperty("db.username");
             String password = prop.getProperty("db.password");
@@ -37,7 +33,6 @@ public class DBManager2 {
 
         _logger.debug("Ending createTable");
     }
-
 
     public void insertRecord(final String downloadedPath, final String imageURL, final String md5) {
         _logger.debug("Starting insertRecord, from URL :" + imageURL + "to: " + downloadedPath);

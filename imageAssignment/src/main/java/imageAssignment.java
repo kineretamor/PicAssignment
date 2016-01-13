@@ -4,14 +4,7 @@ import org.apache.log4j.Logger;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
-import java.net.MalformedURLException;
 import java.net.URL;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.security.DigestInputStream;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 import java.sql.SQLException;
 import java.util.Scanner;
 
@@ -21,6 +14,8 @@ import java.util.Scanner;
 public class ImageAssignment {
     private static final int WIDTH_NEW_IMAGE = 200;
     private static final int HEIGHT_NEW_IMAGE = 200;
+    private static final String DESTINATION = "/Desktop/corticaJavaImageAssignment";
+
     protected static Logger _logger = Logger.getRootLogger();
 
     /**
@@ -38,7 +33,7 @@ public class ImageAssignment {
 
         DownloadFile downloadFile = new DownloadFile();
         EditImage editImage = new EditImage();
-        DBManager2 dbManager = new DBManager2();
+        DBManager dbManager = new DBManager();
         MD5 md5 = new MD5();
 
 
@@ -59,12 +54,12 @@ public class ImageAssignment {
                 String imageFormat = url.toString().substring(url.toString().lastIndexOf(".") + 1);
 
                 //Save the image on desktop, with name image(i)
-                boolean success = (new File(System.getProperty("user.home") + "/Desktop/corticaJavaImageAssignment")).mkdirs();
+                boolean success = (new File(System.getProperty("user.home") + DESTINATION)).mkdirs();
                 if (!success) {
                     _logger.debug("Problem with create new folder on desktop");
                 }
 
-                String destination = System.getProperty("user.home") + "/Desktop/corticaJavaImageAssignment/image" + counter + "." + imageFormat;
+                String destination = System.getProperty("user.home") + DESTINATION + "/image" + counter + "." + imageFormat;
 
                 //Download image
                 BufferedImage orgImg = downloadFile.downloadImage(url);
@@ -98,6 +93,5 @@ public class ImageAssignment {
         _logger.debug("Ending main program");
 
     }
-
 
 }

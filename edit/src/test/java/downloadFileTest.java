@@ -39,7 +39,7 @@ public class downloadFileTest {
         String destination = System.getProperty("user.home") + "/Desktop/corticaJavaImageAssignment/org.jpg";
 
         String imageFormat = url.toString().substring(url.toString().lastIndexOf(".") + 1);
-        String dstPath = url.toString().substring(0, url.toString().indexOf(imageFormat) -1);
+        String dstPath = url.toString().substring(0, url.toString().indexOf(imageFormat) - 1);
 
         File file = new File(destination);
         file.delete();

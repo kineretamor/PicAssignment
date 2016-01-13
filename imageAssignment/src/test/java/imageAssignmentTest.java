@@ -14,15 +14,17 @@ import static junit.framework.Assert.assertTrue;
  */
 public class imageAssignmentTest {
 
+    private static final String DESTINATION = "/Desktop/corticaJavaImageAssignment";
 
     @Test
     public void testImageAssignment() throws Exception {
 
-        //Delete the folder that should create on Desktop
-        File newFolder = new File(System.getProperty("user.home") + "/Desktop/corticaJavaImageAssignment");
+        //Delete the folder that should create on Desktop if exists
+        File newFolder = new File(System.getProperty("user.home") + DESTINATION);
         if (newFolder.exists() && newFolder.isDirectory()) {
             FileUtils.deleteRecursive(newFolder);
         }
+
         ImageAssignment imageAssignment = new ImageAssignment();
         imageAssignment.main();
 
@@ -40,7 +42,7 @@ public class imageAssignmentTest {
 
                 //Get image format
                 String imageFormat = url.toString().substring(url.toString().lastIndexOf(".") + 1);
-                String destination = System.getProperty("user.home") + "/Desktop/corticaJavaImageAssignment/";
+                String destination = System.getProperty("user.home") + DESTINATION;
 
                 boolean check = new File(destination, "image" + counter + "." + imageFormat).exists();
                 assertTrue(check);
@@ -53,17 +55,6 @@ public class imageAssignmentTest {
             e.printStackTrace();
         }
 
-
-        //toDO: add tests for DB, check DB record
-
     }
 
-    public static void deleteFile(File element) {
-        if (element.isDirectory()) {
-            for (File sub : element.listFiles()) {
-                deleteFile(sub);
-            }
-        }
-        element.delete();
-    }
 }
