@@ -22,7 +22,5 @@ public class dbTest {
         cus.testTable();
 
         cus.insertIntoTable();
-
-
     }
 }

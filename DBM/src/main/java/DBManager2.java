@@ -15,9 +15,10 @@ import org.apache.log4j.Logger;
 
 public class DBManager2 {
 
-  /*      private static final String DB_SCHEME_NAME = "db.scheme.name";
-    private static final String DB_USER_PASSWORD = "db.user.password";
-    private static final String DB_USER_NAME = "db.user.name";*/
+    private static final String DB_ADDRESS = "jdbc:hsqldb:hsql://localhost/xdb";
+    private static final String USER_PASSWORD = "";
+    private static final String USER_NAME = "sa";
+    private static final String DRIVER = "org.hsqldb.jdbcDriver";
 
 
     DBHandler dbHandler;
@@ -27,28 +28,26 @@ public class DBManager2 {
 
     private Connection connection = null;
 
-    public DBManager2( ) {
+    public DBManager2() {
 
-        String DBAddress= "jdbc:hsqldb:hsql://localhost/xdb";
-        String userName = "sa";
-        String password = "";
-        String driver = "org.hsqldb.jdbcDriver";
-         dbHandler = new DBHandler(DBAddress, userName, password, driver);
+        String DBAddress = DB_ADDRESS;
+        String userName = USER_NAME;
+        String password = USER_PASSWORD;
+        String driver = DRIVER;
+        dbHandler = new DBHandler(DBAddress, userName, password, driver);
     }
 
 
     public void createTable() throws SQLException {
         _logger.debug("Starting createTable, call db");
 
-       dbHandler.createTable();
+        dbHandler.createTable();
 
         _logger.debug("Ending createTable");
     }
 
 
-
-
-    public void insertRecord( final String downloadedPath, final String imageURL, final String md5) {
+    public void insertRecord(final String downloadedPath, final String imageURL, final String md5) {
         _logger.debug("Starting insertRecord, from URL :" + imageURL + "to: " + downloadedPath);
 
         try {

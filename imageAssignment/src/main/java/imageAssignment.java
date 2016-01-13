@@ -26,6 +26,7 @@ public class ImageAssignment {
      * resize them, change them to gray-scale,
      * save the new images on disk
      * save record per image on db
+     *
      * @throws IOException
      * @throws SQLException
      */
@@ -57,44 +58,12 @@ public class ImageAssignment {
         String imageFormat = url.toString().substring(url.toString().lastIndexOf(".") + 1);
         downloadFile.saveImage(editedImg, imageFormat, destination);
 
-        //Save record on DB
+        //Calculate MD5
         String md5Value = md5.getMD5(destination);
 
-
-
-
-
-
+        //Save record on DB
         dbManager.createTable();
         dbManager.insertRecord(destination, url.toString(), md5Value);
-
-
-
-
-
-
-        // String DBAddress= "jdbc:hsqldb.hsql://localhost/testdb";
-        String DBAddress = "jdbc:hsqldb.hsql://localhost/";
-        String userName = "SA";
-        String password = null;
-        String driver = "org.hsqldb.jdbc.JDBCDriver";
-        //String driver = "com.mysql.jdbc.Driver";
-
-          ConfigDB configDB = new ConfigDB(DBAddress, userName, password, driver);
-        //   configDB.createStatement();
-
-
-
-  /*  DBHandler dbHandler = new DBHandler(DBAddress, userName, password, driver);
-    try {
-      dbHandler.createTable();
-    } catch (SQLException e) {
-      e.printStackTrace();
-    }*/
-        int f;
-        f = 3;
-
-
 
         _logger.debug("Ending main program");
 
