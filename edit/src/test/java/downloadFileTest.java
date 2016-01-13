@@ -41,10 +41,10 @@ public class downloadFileTest {
         //Download image
         BufferedImage image = downloadFile.downloadImage(url);
 
-        downloadFile.saveImage(image, "png", destination);
+        downloadFile.saveImage(image, imageFormat, destination);
 
         //Check that the new file created
-        check = new File("/Users/kineret/Desktop/destination/", "org.png").exists();
+        check = new File("/Users/kineret/Desktop/destination/org.jpg").exists();
         assertTrue(check);
 
     }

@@ -1,5 +1,6 @@
 import org.junit.Test;
 
+import java.io.File;
 import java.net.URL;
 
 import static junit.framework.Assert.assertFalse;
@@ -22,7 +23,7 @@ public class imageAssignmentTest {
         imageAssignment.main();
 
         //Check that the new file created
-      //  check = new File("/Users/kineret/Desktop/destination/", "new.png").exists();
+       // check = new File("/Users/kineret/Desktop/destination/", "new.png").exists();
        // assertTrue(check);
 
         //toDO: add tests for DB, check DB record
