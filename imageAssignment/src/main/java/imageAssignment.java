@@ -35,7 +35,7 @@ public class ImageAssignment {
 
         DownloadFile downloadFile = new DownloadFile();
         EditImage editImage = new EditImage();
-      //  DBManager2 dbManager = new DBManager2();
+        DBManager2 dbManager = new DBManager2();
         MD5 md5 = new MD5();
 
 
@@ -60,8 +60,13 @@ public class ImageAssignment {
         //Save record on DB
         String md5Value = md5.getMD5(destination);
 
-        //dbManager.createTable();
-        //dbManager.insertRecord(destination, url.toString(), md5Value);
+
+
+
+
+
+        dbManager.createTable();
+        dbManager.insertRecord(destination, url.toString(), md5Value);
 
 
 

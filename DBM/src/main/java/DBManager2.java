@@ -29,11 +29,10 @@ public class DBManager2 {
 
     public DBManager2( ) {
 
-        String DBAddress= "jdbc:hsqldb.hsql://localhost/";
-        String userName = "SA";
-        String password = null;
-        String driver = "org.hsqldb.jdbc.JDBCDriver";
-        //String driver = "com.mysql.jdbc.Driver";
+        String DBAddress= "jdbc:hsqldb:hsql://localhost/xdb";
+        String userName = "sa";
+        String password = "";
+        String driver = "org.hsqldb.jdbcDriver";
          dbHandler = new DBHandler(DBAddress, userName, password, driver);
     }
 
