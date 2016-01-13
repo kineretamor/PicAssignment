@@ -1,3 +1,4 @@
+import org.apache.log4j.Logger;
 import org.junit.Test;
 
 import java.awt.image.BufferedImage;
@@ -12,6 +13,8 @@ import static org.junit.Assert.assertNotNull;
  * Created by kineret on 1/12/16.
  */
 public class downloadFileTest {
+    protected static Logger _logger = Logger.getRootLogger();
+
     DownloadFile downloadFile = new DownloadFile();
 
     @Test
@@ -28,13 +31,18 @@ public class downloadFileTest {
     @Test
     public void testSaveImage() throws Exception {
         URL url = new URL("http://carbl.com/im/2013/07/Suzuki-Swift-5d-600x324.jpg");
-        //ToDo: change destination to global
-        String destination = "/Users/kineret/Desktop/destination/org.jpg";
+        //Create a folder if not exists, to save the file
+        boolean success = (new File(System.getProperty("user.home") + "/Desktop/corticaJavaImageAssignment")).mkdirs();
+        if (!success) {
+            _logger.debug("Problem with create new folder on desktop");
+        }
+        String destination = System.getProperty("user.home") + "/Desktop/corticaJavaImageAssignment/org.jpg";
+
         String imageFormat = url.toString().substring(url.toString().lastIndexOf(".") + 1);
         String dstPath = url.toString().substring(0, url.toString().indexOf(imageFormat) -1);
 
         File file = new File(destination);
-        boolean deleted = file.delete();
+        file.delete();
 
         boolean check = new File(dstPath, imageFormat).exists();
         assertFalse(check);
@@ -44,7 +52,7 @@ public class downloadFileTest {
         downloadFile.saveImage(image, imageFormat, destination);
 
         //Check that the new file created
-        check = new File("/Users/kineret/Desktop/destination/org.jpg").exists();
+        check = new File(destination).exists();
         assertTrue(check);
 
     }

@@ -16,7 +16,7 @@ public class imageAssignmentTest {
 
 
     @Test
-    public void testEditPic() throws Exception {
+    public void testImageAssignment() throws Exception {
 
         //Delete the folder that should create on Desktop
       //  FileUtils.deleteDirectory(System.getProperty("user.home") + "/Desktop/corticaJavaImageAssignment");

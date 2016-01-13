@@ -11,9 +11,9 @@ public class dbTest {
     protected static Logger _logger = Logger.getRootLogger();
 
     @Test
-    public void testEditPic() throws Exception {
+    public void testDB() throws Exception {
 
-        _logger.info("Starting query... ");
+        _logger.info("Starting testBD");
 
         ConfigDBUsageSample cus = new ConfigDBUsageSample("jdbc:hsqldb:hsql://localhost/xdb", "sa", ""
                 , "org.hsqldb.jdbcDriver");
