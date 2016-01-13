@@ -19,8 +19,10 @@ public class imageAssignmentTest {
     public void testImageAssignment() throws Exception {
 
         //Delete the folder that should create on Desktop
-      //  FileUtils.deleteDirectory(System.getProperty("user.home") + "/Desktop/corticaJavaImageAssignment");
-
+        File newFolder = new File(System.getProperty("user.home") + "/Desktop/corticaJavaImageAssignment");
+        if (newFolder.exists() && newFolder.isDirectory()) {
+            FileUtils.deleteRecursive(newFolder);
+        }
         ImageAssignment imageAssignment = new ImageAssignment();
         imageAssignment.main();
 
@@ -54,5 +56,14 @@ public class imageAssignmentTest {
 
         //toDO: add tests for DB, check DB record
 
+    }
+
+    public static void deleteFile(File element) {
+        if (element.isDirectory()) {
+            for (File sub : element.listFiles()) {
+                deleteFile(sub);
+            }
+        }
+        element.delete();
     }
 }
