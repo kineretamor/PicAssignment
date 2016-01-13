@@ -1,7 +1,10 @@
+import org.apache.cassandra.io.util.FileUtils;
 import org.junit.Test;
 
 import java.io.File;
+import java.io.IOException;
 import java.net.URL;
+import java.util.Scanner;
 
 import static junit.framework.Assert.assertFalse;
 import static junit.framework.Assert.assertTrue;
@@ -14,17 +17,40 @@ public class imageAssignmentTest {
 
     @Test
     public void testEditPic() throws Exception {
-       // boolean check = new File("/Users/kineret/Desktop/destination/", "new.png").exists();
-       // assertFalse(check);
-        URL url = new URL("http://carbl.com/im/2013/07/Suzuki-Swift-5d-600x324.jpg");
-        String destination = "/Users/kineret/Desktop/destination/new.png";
+
+        //Delete the folder that should create on Desktop
+      //  FileUtils.deleteDirectory(System.getProperty("user.home") + "/Desktop/corticaJavaImageAssignment");
 
         ImageAssignment imageAssignment = new ImageAssignment();
         imageAssignment.main();
 
         //Check that the new file created
-       // check = new File("/Users/kineret/Desktop/destination/", "new.png").exists();
-       // assertTrue(check);
+        ClassLoader classLoader = getClass().getClassLoader();
+        File file = new File(classLoader.getResource("files/URLList").getFile());
+
+        //Check the program created the images
+        try (Scanner scanner = new Scanner(file)) {
+            int counter = 1;
+            while (scanner.hasNextLine()) {
+                String line = scanner.nextLine();
+                //URL to download image
+                URL url = new URL(line);
+
+                //Get image format
+                String imageFormat = url.toString().substring(url.toString().lastIndexOf(".") + 1);
+                String destination = System.getProperty("user.home") + "/Desktop/corticaJavaImageAssignment/";
+
+                boolean check = new File(destination, "image" + counter + "." + imageFormat).exists();
+                assertTrue(check);
+                counter++;
+            }
+            //Finish read file
+            scanner.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
 
         //toDO: add tests for DB, check DB record
 

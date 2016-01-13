@@ -59,7 +59,12 @@ public class ImageAssignment {
                 String imageFormat = url.toString().substring(url.toString().lastIndexOf(".") + 1);
 
                 //Save the image on desktop, with name image(i)
-                String destination = System.getProperty("user.home") + "/Desktop/image" + counter + "." + imageFormat;
+                boolean success = (new File(System.getProperty("user.home") + "/Desktop/corticaJavaImageAssignment")).mkdirs();
+                if (!success) {
+                    _logger.debug("Problem with create new folder on desktop");
+                }
+
+                String destination = System.getProperty("user.home") + "/Desktop/corticaJavaImageAssignment/image" + counter + "." + imageFormat;
 
                 //Download image
                 BufferedImage orgImg = downloadFile.downloadImage(url);
