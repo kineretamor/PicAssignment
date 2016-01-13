@@ -1,40 +1,32 @@
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.math.BigInteger;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.security.DigestInputStream;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 import java.sql.*;
 import java.text.MessageFormat;
 import java.util.Properties;
 
-import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;
 
 public class DBManager2 {
 
-    private static final String DB_ADDRESS = "jdbc:hsqldb:hsql://localhost/xdb";
-    private static final String USER_PASSWORD = "";
-    private static final String USER_NAME = "sa";
-    private static final String DRIVER = "org.hsqldb.jdbcDriver";
-
-
     DBHandler dbHandler;
-
 
     protected static Logger _logger = Logger.getRootLogger();
 
-    private Connection connection = null;
-
     public DBManager2() {
 
-        String DBAddress = DB_ADDRESS;
-        String userName = USER_NAME;
-        String password = USER_PASSWORD;
-        String driver = DRIVER;
-        dbHandler = new DBHandler(DBAddress, userName, password, driver);
+        Properties prop = new Properties();
+        try {
+            prop.load(DBManager2.class.getClassLoader().getResourceAsStream("dbmSettings.properties"));
+            String DBAddress = prop.getProperty("db.address");
+            String userName = prop.getProperty("db.username");
+            String password = prop.getProperty("db.password");
+            String driver = prop.getProperty("db.driver");
+
+            dbHandler = new DBHandler(DBAddress, userName, password, driver);
+        } catch (Exception e) {
+            _logger.error(e.getMessage());
+        }
     }
 
 
