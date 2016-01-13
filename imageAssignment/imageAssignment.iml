@@ -12,7 +12,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.6" level="project" />
-    <orderEntry type="library" name="Maven: hsqldb:hsqldb:1.8.0.7" level="project" />
+    <orderEntry type="library" name="Maven: org.hsqldb:hsqldb:2.3.3" level="project" />
     <orderEntry type="module" module-name="edit" />
     <orderEntry type="module" module-name="DBM" />
     <orderEntry type="module" module-name="DB" />

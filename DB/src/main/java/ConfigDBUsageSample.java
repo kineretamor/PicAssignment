@@ -43,7 +43,7 @@ public class ConfigDBUsageSample extends ConfigDB {
 	
 	public void insertIntoTable() throws SQLException {
 		String query = "INSERT INTO images (downloadDate, filepath, url, md5) "
-				+ " VALUES(now(), 'c://image.jpg', 'http://abcd.com/image.jpg', 'some_md5')";
+				+ " VALUES(now(), 'c://image.jpg1111', 'http://abcd.com/image.jpg', 'some_md5')";
 		try (Statement s = createStatement()) {
 			s.executeUpdate(query);
 		}

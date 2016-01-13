@@ -15,6 +15,14 @@ public class dbTest {
 
         _logger.info("Starting query... ");
 
+        ConfigDBUsageSample cus = new ConfigDBUsageSample("jdbc:hsqldb:hsql://localhost/xdb", "sa", ""
+                , "org.hsqldb.jdbcDriver");
+
+        cus.createTable();
+        cus.testTable();
+
+        cus.insertIntoTable();
+
 
     }
 }

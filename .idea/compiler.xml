@@ -22,28 +22,24 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="DBM" />
       </profile>
       <profile default="false" name="Annotation profile for DB" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="DB" />
       </profile>
       <profile default="false" name="Annotation profile for imageAssignment" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="imageAssignment" />
       </profile>
       <profile default="false" name="Annotation profile for edit" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="edit" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -52,6 +48,7 @@
       <module name="edit" target="1.7" />
       <module name="imageAssignment" target="1.7" />
       <module name="picAssignment" target="1.7" />
+      <module name="PicAssignment" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

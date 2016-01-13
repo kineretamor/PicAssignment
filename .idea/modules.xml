@@ -4,9 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DB/DB.iml" filepath="$PROJECT_DIR$/DB/DB.iml" />
       <module fileurl="file://$PROJECT_DIR$/DBM/DBM.iml" filepath="$PROJECT_DIR$/DBM/DBM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/picAssignment.iml" filepath="$PROJECT_DIR$/picAssignment.iml" />
       <module fileurl="file://$PROJECT_DIR$/edit/edit.iml" filepath="$PROJECT_DIR$/edit/edit.iml" />
       <module fileurl="file://$PROJECT_DIR$/imageAssignment/imageAssignment.iml" filepath="$PROJECT_DIR$/imageAssignment/imageAssignment.iml" />
-      <module fileurl="file://$PROJECT_DIR$/picAssignment.iml" filepath="$PROJECT_DIR$/picAssignment.iml" />
     </modules>
   </component>
 </project>
