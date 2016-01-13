@@ -2,6 +2,7 @@ import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Logger;
 
 import java.awt.image.BufferedImage;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.MalformedURLException;
@@ -12,6 +13,7 @@ import java.security.DigestInputStream;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.sql.SQLException;
+import java.util.Scanner;
 
 /**
  * Created by kineret on 1/11/16.
@@ -40,30 +42,53 @@ public class ImageAssignment {
         MD5 md5 = new MD5();
 
 
-        //URL to download image
-        URL url = new URL("http://carbl.com/im/2013/07/Suzuki-Swift-5d-600x324.jpg");
-        String destination = "/Users/kineret/Desktop/destination/new.png";
+        //Get file from resources folder
+        ClassLoader classLoader = getClass().getClassLoader();
+        File file = new File(classLoader.getResource("files/URLList").getFile());
 
-        //Download image
-        BufferedImage orgImg = downloadFile.downloadImage(url);
+        //Read every time only one line - each line represent one URL
+        try (Scanner scanner = new Scanner(file)) {
+            int counter = 1;
+            while (scanner.hasNextLine()) {
+                String line = scanner.nextLine();
 
-        //Change image size
-        BufferedImage editedImg = editImage.resizeImage(orgImg, WIDTH_NEW_IMAGE, HEIGHT_NEW_IMAGE);
+                //URL to download image
+                URL url = new URL(line);
 
-        //Change colour to gray-scale
-        editedImg = editImage.convertToGrayScaleImage(editedImg);
+                //Get image format
+                String imageFormat = url.toString().substring(url.toString().lastIndexOf(".") + 1);
 
-        //Save new image on disk
-        //Get image format
-        String imageFormat = url.toString().substring(url.toString().lastIndexOf(".") + 1);
-        downloadFile.saveImage(editedImg, imageFormat, destination);
+                //Save the image on desktop, with name image(i)
+                String destination = System.getProperty("user.home") + "/Desktop/image" + counter + "." + imageFormat;
 
-        //Calculate MD5
-        String md5Value = md5.getMD5(destination);
+                //Download image
+                BufferedImage orgImg = downloadFile.downloadImage(url);
 
-        //Save record on DB
-        dbManager.createTable();
-        dbManager.insertRecord(destination, url.toString(), md5Value);
+                //Change image size
+                BufferedImage editedImg = editImage.resizeImage(orgImg, WIDTH_NEW_IMAGE, HEIGHT_NEW_IMAGE);
+
+                //Change colour to gray-scale
+                editedImg = editImage.convertToGrayScaleImage(editedImg);
+
+                //Save new image on disk
+                downloadFile.saveImage(editedImg, imageFormat, destination);
+
+                //Calculate MD5
+                String md5Value = md5.getMD5(destination);
+
+                //Save record on DB
+                dbManager.createTable();
+                dbManager.insertRecord(destination, url.toString(), md5Value);
+
+                counter++;
+            }
+
+            //Finish read file
+            scanner.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
         _logger.debug("Ending main program");
 
